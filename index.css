@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    size: 100px;
+}
+
+.title {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.title > h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.generator {
+    margin-top: 10%;
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.input--box {
+    position: relative;
+    margin-top: 10px;
+}
+
+.input--box input {
+    width: 95%;
+    margin: 0 auto;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 17px;
+    padding-left: 13px;
+}
+
+.input--box .fa-regular {
+    right: 13px;
+    z-index: 999;
+    position: absolute;
+    line-height: 35px;
+}
+
+.strong-password-indicator {
+    display: flex;
+    height: 4px;
+    width: 100%;
+    position: relative;
+    background: #DFDFDF;
+    margin-top: 0.75rem;
+    border-radius: 25px;
+}
+
+.strong-password-indicator#weak::before {
+    width: 10%;
+    background-color: rgb(255, 0, 0);
+}
+
+.strong-password-indicator#medium::before {
+    width: 50%;
+    background-color: rgb(255, 255, 0);
+}
+
+.strong-password-indicator#strong::before {
+    width: 100%;
+    background-color: rgb(8, 242, 31);
+}
+
+.strong-password-indicator::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 0%;
+    border-radius: inherit;
+    transition: width 0.3s ease;
+}
+
+.password-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type='range'] {
+    overflow: hidden;
+    width: 100%;
+}
+
+.options{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0;
+
+}
+
+.password-settings-title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.options li{
+    display: flex;
+    align-items: center;
+    width: calc(100% / 2);
+    margin-top: 10px;
+}
+
+.options span{
+    margin-left: 10px;
+}
+
+.password-button{
+    width: 100%;
+    border: none;
+    background-color: grey;
+    cursor: pointer;
+    padding: 0.94rem 0;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: white;
+}
